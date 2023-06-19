@@ -5,9 +5,10 @@ css.href = 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.m
 css.rel = 'stylesheet';
 document.head.appendChild(css);
 var s = document.createElement('script')
-s.src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'
+s.src = 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'
 document.head.appendChild(s);
+let toast
 
-setTimeout(()=>{
-  const toast = toastr
-},100)
+s.onload(() => {
+    toast = toastr
+})
